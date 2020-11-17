@@ -8,6 +8,8 @@ this.addEventListener("install",(event)=>{
                 "/static/js/0.chunk.js",
                 "/index.html",
                 "/",
+                // 'https://opentdb.com/api.php?amount=easy&difficulty=easy&type=multiple',
+                '/static/media/backGround.66480487.jpg'
 
             ])
         })
