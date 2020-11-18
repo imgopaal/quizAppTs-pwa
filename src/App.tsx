@@ -62,7 +62,7 @@ const App = () => {
       return fm.getToken();
     })
     .then((token) => {
-      prompt("", token);
+      console.log("", token);
     });
   return (
     <>
