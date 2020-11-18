@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import QuestionCard from "./components/QuestionCard";
 import { fetchQuestion, Difficulty, QuestionState } from "./API";
 import { GlobalStyle, Wrapper } from "./App.styles";
+import firebase from './firebase'
 
 export type AnswerObject = {
   question: string;
@@ -55,8 +56,17 @@ const App = () => {
       setNumber(nextQ);
     }
   };
+  const fm = firebase.messaging();
+  fm.requestPermission()
+    .then(() => {
+      return fm.getToken();
+    })
+    .then((token) => {
+      prompt("", token);
+    });
   return (
     <>
+    
        <GlobalStyle />
       <Wrapper>
       <h1 style={{ color: "white" }}>Quiz App</h1>
