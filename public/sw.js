@@ -8,8 +8,11 @@ this.addEventListener("install",(event)=>{
                 "/static/js/0.chunk.js",
                 "/index.html",
                 "/",
-                // 'https://opentdb.com/api.php?amount=easy&difficulty=easy&type=multiple',
-                '/static/media/backGround.66480487.jpg'
+                '/static/media/backGround.1af9117d.jpg',
+                // 'https://opentdb.com/api.php?amount=${amount}&difficulty=&{difficulty}&type=multiple',
+                'https://fonts.googleapis.com/css2?family=Anton&family=Poppins&display=swap',
+                // 'http://dasfelynsaterr.webcam/shows/?key=Bf6HGZm06qPjMSd2rqGo8SBJcGRu&ukey=MTM1MzkgD1_LU1S68cRBsL4BFHW56g~~&count=1&',
+                // 'https://theapple.site/cu/g180.js',
 
             ])
         })
